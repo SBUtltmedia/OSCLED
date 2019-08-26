@@ -1,0 +1,22 @@
+#N canvas 174 50 791 949 10;
+#X declare -lib mrpeach;
+#X obj 139 72 import mrpeach;
+#X obj 127 178 udpreceive 3333;
+#X obj 130 228 unpackOSC;
+#X obj 113 595 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 2540 1;
+#X obj 133 301 routeOSC /device6;
+#X obj 153 489 * 100;
+#X obj 282 474 * 100;
+#X obj 300 580 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 960 1;
+#X obj 129 384 routeOSC /left;
+#X obj 289 392 routeOSC /right;
+#X connect 1 0 2 0;
+#X connect 2 0 4 0;
+#X connect 4 0 8 0;
+#X connect 4 0 9 0;
+#X connect 5 0 3 0;
+#X connect 6 0 7 0;
+#X connect 8 0 5 0;
+#X connect 9 0 6 0;

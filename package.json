@@ -1,0 +1,23 @@
+{
+  "name": "ledosc",
+  "version": "1.0.0",
+  "description": "A arduio project that reads from 2 LED distance sensors, sends that info over RF24 to a central receiver which send that over serial to a nodejs program that sends that info to a puredata program over osc  ",
+  "main": "read.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SBUtltmedia/OSCLED.git"
+  },
+  "author": "TLT Media Lab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SBUtltmedia/OSCLED/issues"
+  },
+  "homepage": "https://github.com/SBUtltmedia/OSCLED#readme",
+  "dependencies": {
+    "node-osc": "^4.1.1",
+    "serialport": "^7.1.5"
+  }
+}
