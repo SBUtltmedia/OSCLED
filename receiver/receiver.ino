@@ -17,8 +17,8 @@ RF24 radio(pinCE, pinCSN); // Declare object from nRF24 library (Create your wir
 //Create up to 6 pipe addresses P0 - P5;  the "LL" is for LongLong type
 const uint64_t rAddress[] = {0x7878787878LL, 0xB3B4B5B6F1LL, 0xB3B4B5B6CDLL, 0xB3B4B5B6A3LL, 0xB3B4B5B60FLL, 0xB3B4B5B605LL };
 
-   double sins[2];
-   byte packets[9];
+   short sins[2];
+   byte packets[5];
 void setup()   
 {
   Serial.begin(115200);  //start serial to communication
